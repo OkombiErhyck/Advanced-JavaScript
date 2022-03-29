@@ -9,9 +9,26 @@
 <body>
 </body>
 <script>
- function calculate (x, z){
-return x*z;
+ class Student {
+     constructor(name, address, phone, course) {
+            this.name = name,
+            this.address = address,
+            this.phone = phone,
+            this.course = course
+     }
+     getInfo() {
+            console.log("Name: " + this.name + ",", "Address: " +
+            this.address + ",", "Phone : " + this.phone + ",", "Course: " +
+            this.course)
+     }
 }
+      let Student1 = new Student("John Benson", "St. High Park Nr.36", 5078333567, "Geography")
+      let Student2 = new Student("G.I Joe ", "Str. Dumbravei Nr.11", 763465224, "Drept")
+      let Student3 = new Student("George Smith", "St. Funland Nr.67", 976528898, "Politehnica")
+
+      Student1.getInfo()
+      Student2.getInfo()
+      Student3.getInfo()
 
 
 </script>
